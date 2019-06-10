@@ -1,0 +1,2352 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#"
+     xml:base="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:knowrob="http://ias.cs.tum.edu/kb/knowrob.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl">
+        <owl:imports rdf:resource="file:///home/paulo/fuerte_workspace/stacks/knowrob/ias_knowledge_base/owl/knowrob.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#eventOccursAt -->
+
+    <owl:ObjectProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#eventOccursAt"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#objectActedOn -->
+
+    <owl:ObjectProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#objectActedOn"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#startTime -->
+
+    <owl:ObjectProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#startTime"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#subAction -->
+
+    <owl:ObjectProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#taskToAchieve -->
+
+    <owl:ObjectProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#taskToAchieve"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#toLocation -->
+
+    <owl:ObjectProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#toLocation"/>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CanGrab -->
+
+    <owl:ObjectProperty rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CanGrab">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#IsMemberOf -->
+
+    <owl:ObjectProperty rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#IsMemberOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#IsRepresentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#IsRepresentedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#StartCTscan -->
+
+    <owl:ObjectProperty rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#StartCTscan">
+        <rdfs:subPropertyOf rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#temporallyRelated"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Takes3DScan -->
+
+    <owl:ObjectProperty rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Takes3DScan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#algorithmActedOn -->
+
+    <owl:ObjectProperty rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#algorithmActedOn">
+        <rdfs:subPropertyOf rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#preActors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#hasAttached -->
+
+    <owl:ObjectProperty rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#hasAttached">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#isComposedBy -->
+
+    <owl:ObjectProperty rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#isComposedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#depthOfObject -->
+
+    <owl:DatatypeProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#depthOfObject"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#heightOfObject -->
+
+    <owl:DatatypeProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#heightOfObject"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#m00 -->
+
+    <owl:DatatypeProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#m00"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#m01 -->
+
+    <owl:DatatypeProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#m01"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#m02 -->
+
+    <owl:DatatypeProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#m02"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#m03 -->
+
+    <owl:DatatypeProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#m03"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#m10 -->
+
+    <owl:DatatypeProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#m10"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#m11 -->
+
+    <owl:DatatypeProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#m11"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#m12 -->
+
+    <owl:DatatypeProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#m12"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#m13 -->
+
+    <owl:DatatypeProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#m13"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#m20 -->
+
+    <owl:DatatypeProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#m20"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#m21 -->
+
+    <owl:DatatypeProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#m21"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#m22 -->
+
+    <owl:DatatypeProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#m22"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#m23 -->
+
+    <owl:DatatypeProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#m23"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#m30 -->
+
+    <owl:DatatypeProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#m30"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#m31 -->
+
+    <owl:DatatypeProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#m31"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#m32 -->
+
+    <owl:DatatypeProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#m32"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#m33 -->
+
+    <owl:DatatypeProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#m33"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#widthOfObject -->
+
+    <owl:DatatypeProperty rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#widthOfObject"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#Baked -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#Baked"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#CowsMilk-Product -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#CowsMilk-Product"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#Cracking -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#Cracking"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#DinnerPlate -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#DinnerPlate"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#Dough -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#Dough"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#Egg-Chickens -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#Egg-Chickens"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#EggYolk-Food -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#EggYolk-Food"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#FlippingAnObject -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#FlippingAnObject"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#ImagePoint -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#ImagePoint">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Image"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#KitchenTable -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#KitchenTable"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#Mixing -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#Mixing"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#PancakeMaker -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#PancakeMaker"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#PancakeMix -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#PancakeMix"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#Point3D -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#Point3D"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#PouringSomethingOnto -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#PouringSomethingOnto"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#PreparingFoodOrDrink -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#PreparingFoodOrDrink"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#PuttingSomethingOnto -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#PuttingSomethingOnto"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#TimePoint -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#TimePoint"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#TurningOnPoweredDevice -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#TurningOnPoweredDevice"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#VisualPerception -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#VisualPerception"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#WheatFlour -->
+
+    <owl:Class rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#WheatFlour"/>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#AnatomicalStructure -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#AnatomicalStructure">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PhysicalAnatomicalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Anesthetist -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Anesthetist">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Medical_Doctor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#BodyStructure -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#BodyStructure">
+        <rdfs:subClassOf rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#HumanScaleObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#BodySystemStructure -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#BodySystemStructure">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#AnatomicalStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#BoneStructure -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#BoneStructure">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SkeletalSystemStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#BoneStructureOfDistalFemur -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#BoneStructureOfDistalFemur">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FemurPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#BoneStructureOfProximalFemur -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#BoneStructureOfProximalFemur">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FemurPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#BoneStructureOfShaftOfFemur -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#BoneStructureOfShaftOfFemur">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FemurPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Bone_Drill -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Bone_Drill">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SurgicalDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTRoom -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTRoom">
+        <rdfs:subClassOf rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RoomInAConstruction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CT_BoneContourSegmentation -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CT_BoneContourSegmentation">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalAlgorithms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#eventOccursAt"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#EngineerRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#outputsCreated"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Image"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#algorithmActedOn"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Image"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CT_PointCloudConstruction -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CT_PointCloudConstruction">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PreoperativeActions"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#eventOccursAt"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#EngineerRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#algorithmActedOn"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTdataset"/>
+                            <rdf:Description rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Image"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CT_imager -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CT_imager">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MachineVision"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#lispClass"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ct</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTdataset -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTdataset">
+        <rdfs:subClassOf rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SpatialThing-Localized"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTdatasetPerception -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTdatasetPerception">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalPerception"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#deviceUsed"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CT_imager"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#eventOccursAt"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#objectActedOn"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#EntireFemur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#outputsCreated"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTdataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CloudsRegistration -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CloudsRegistration">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalAlgorithms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#eventOccursAt"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#OperatingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#outputsCreated"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Pose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#previousEvent"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtain3DfemurModelFromCT"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#algorithmActedOn"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#OR_PointCloud"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CrackingAnEgg -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CrackingAnEgg">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#Cracking"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#objectActedOn"/>
+                        <owl:someValuesFrom rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#Egg-Chickens"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Denoising -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Denoising">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalAlgorithms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#eventOccursAt"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#OperatingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#outputsCreated"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Image"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#algorithmActedOn"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Image"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#DrillingPose -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#DrillingPose">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Pose"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#DrillingPoseCalculus -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#DrillingPoseCalculus">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#eventOccursAt"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#EngineerRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Engineer -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Engineer">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Human"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#EngineerRoom -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#EngineerRoom">
+        <rdfs:subClassOf rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#OfficeRoom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#EntireFemur -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#EntireFemur">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#StructureOfFemur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#EntireHeadOfFemur -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#EntireHeadOfFemur">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#StuctureOfHeadOfFemur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#ExtractImagesFromCTdataSET -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#ExtractImagesFromCTdataSET">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PreoperativeActions"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#eventOccursAt"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#EngineerRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#objectActedOn"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTdataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#outputsCreated"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Image"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FemoralEpiphysis -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FemoralEpiphysis">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FemurPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FemurPart -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FemurPart">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#StructureOfFemur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FemurPose -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FemurPose">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Pose"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FlippingAPancake -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FlippingAPancake">
+        <rdfs:subClassOf rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#FlippingAnObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#objectActedOn"/>
+                <owl:someValuesFrom rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#Baked"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Human -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Human">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#IR_imager -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#IR_imager">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MachineVision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#IntraOperativeActions -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#IntraOperativeActions">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalDataSensingOrManipulation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#eventOccursAt"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#OperatingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MachineVision -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MachineVision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:MeasuringDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes">
+        <rdfs:subClassOf rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PreparingFoodOrDrink"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CrackingAnEgg"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FlippingAPancake"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MixEggAndDough"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MixFlourAndMilk"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PourDoughOntoPancakeMaker"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#taskToAchieve"/>
+                <owl:someValuesFrom rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#Baked"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalAlgorithms -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalAlgorithms">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalDataSensingOrManipulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalDataSensingOrManipulation -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalDataSensingOrManipulation">
+        <rdfs:subClassOf rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#ActionOnObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalDoctorOffice -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalDoctorOffice">
+        <rdfs:subClassOf rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#OfficeRoom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalPerception -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalPerception">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalDataSensingOrManipulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Medical_Doctor -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Medical_Doctor">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Human"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MixEggAndDough -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MixEggAndDough">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#Mixing"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#objectActedOn"/>
+                        <owl:someValuesFrom rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#Dough"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#objectActedOn"/>
+                        <owl:someValuesFrom rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#EggYolk-Food"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MixFlourAndMilk -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MixFlourAndMilk">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#Mixing"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#objectActedOn"/>
+                        <owl:someValuesFrom rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#CowsMilk-Product"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#objectActedOn"/>
+                        <owl:someValuesFrom rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#WheatFlour"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Nurse -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Nurse">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Human"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#OR_PointCloud -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#OR_PointCloud">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PointCloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#ORcalibration -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#ORcalibration">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#IntraOperativeActions"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CloudsRegistration"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtain3DfemurModelFromUS"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#taskToAchieve"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Pose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#ObjectProcessed -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#ObjectProcessed">
+        <rdfs:subClassOf rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#ObjectState"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#OperatingRoom -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#OperatingRoom">
+        <rdfs:subClassOf rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RoomInAConstruction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#POLARISdataPerception -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#POLARISdataPerception">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalPerception"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#deviceUsed"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#IR_imager"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#eventOccursAt"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#OperatingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#objectActedOn"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_imager"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#outputsCreated"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Pose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Patient -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Patient">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Human"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PhysicalAnatomicalEntity -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PhysicalAnatomicalEntity">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#BodyStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PointCloud -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PointCloud">
+        <rdfs:subClassOf rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SpatialThing-Localized"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Pose -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Pose">
+        <rdfs:subClassOf rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SpatialThing-Localized"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PourDoughOntoPancakeMaker -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PourDoughOntoPancakeMaker">
+        <rdfs:subClassOf rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PouringSomethingOnto"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#objectActedOn"/>
+                        <owl:someValuesFrom rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#Dough"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#toLocation"/>
+                        <owl:someValuesFrom rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PancakeMaker"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PreoperativeActions -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PreoperativeActions">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalDataSensingOrManipulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#RobotMotion -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#RobotMotion">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#IntraOperativeActions"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#deviceUsed"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CORA:SemiAutonomousRobot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#outputsCreated"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Pose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#previousEvent"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#DrillingPoseCalculus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#algorithmActedOn"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FemurPose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#RoboticBoneTracking -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#RoboticBoneTracking">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#IntraOperativeActions"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#previousEvent"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#ORcalibration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#taskToAchieve"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Pose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SkeletalSystemStructure -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SkeletalSystemStructure">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#StructureOfMusculoskeletalSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#StructureOfBone -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#StructureOfBone">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#BoneStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#StructureOfFemur -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#StructureOfFemur">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#StructureOfBone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#StructureOfMusculoskeletalSystem -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#StructureOfMusculoskeletalSystem">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#BodySystemStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#StuctureOfHeadOfFemur -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#StuctureOfHeadOfFemur">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#BoneStructureOfProximalFemur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Surgeon -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Surgeon">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Medical_Doctor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SurgicalDevice -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SurgicalDevice">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Translation -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Translation">
+        <rdfs:subClassOf rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#SpatialThing-Localized"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_BoneContourSegmentation -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_BoneContourSegmentation">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalAlgorithms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#eventOccursAt"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#OperatingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#outputsCreated"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Image"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#algorithmActedOn"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Image"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_OR_Registration -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_OR_Registration">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalAlgorithms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#eventOccursAt"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#OperatingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#outputsCreated"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#OR_PointCloud"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#algorithmActedOn"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_PointCloud"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_PointCloud -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_PointCloud">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PointCloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_PointCloudConstruction -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_PointCloudConstruction">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalAlgorithms"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#algorithmActedOn"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Pose"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#algorithmActedOn"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Image"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#outputsCreated"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_PointCloud"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_Processing -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_Processing">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#IntraOperativeActions"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Denoising"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_BoneContourSegmentation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#setROI"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_imager -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_imager">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MachineVision"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:Exterioceptive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#USimagePerception -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#USimagePerception">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalPerception"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#deviceUsed"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_imager"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#eventOccursAt"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#OperatingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#objectActedOn"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#EntireFemur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#outputsCreated"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Image"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtain3DfemurModelFromCT -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtain3DfemurModelFromCT">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CT_BoneContourSegmentation"/>
+                    <rdf:Description rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CT_PointCloudConstruction"/>
+                    <rdf:Description rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTdatasetPerception"/>
+                    <rdf:Description rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#ExtractImagesFromCTdataSET"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PreoperativeActions"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CT_BoneContourSegmentation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CT_PointCloudConstruction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTdatasetPerception"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#ExtractImagesFromCTdataSET"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#outputsCreated"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PointCloud"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtain3DfemurModelFromUS -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtain3DfemurModelFromUS">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_OR_Registration"/>
+                    <rdf:Description rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_PointCloudConstruction"/>
+                    <rdf:Description rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_Processing"/>
+                    <rdf:Description rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtainSynchronizedUSPolarisData"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#IntraOperativeActions"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_OR_Registration"/>
+                            <rdf:Description rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_PointCloudConstruction"/>
+                            <rdf:Description rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_Processing"/>
+                            <rdf:Description rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtainSynchronizedUSPolarisData"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#taskToAchieve"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#OR_PointCloud"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtain3DfemurSurfaceFromUS -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtain3DfemurSurfaceFromUS">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#IntraOperativeActions"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_OR_Registration"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_PointCloudConstruction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_Processing"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtainSynchronizedUSPolarisData"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#taskToAchieve"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#OR_PointCloud"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtainSynchronizedUSPolarisData -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtainSynchronizedUSPolarisData">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#IntraOperativeActions"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#POLARISdataPerception"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#subAction"/>
+                        <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#USimagePerception"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#setROI -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#setROI">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MedicalAlgorithms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#eventOccursAt"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#OperatingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#outputsCreated"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Image"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#algorithmActedOn"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Image"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CORA:AutonomousRobot -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CORA:AutonomousRobot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#CORA:Robot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CORA:NonAutonomousRobot -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CORA:NonAutonomousRobot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#CORA:Robot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CORA:SemiAutonomousRobot -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CORA:SemiAutonomousRobot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#CORA:Robot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Agent -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Agent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:Physical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:ContentBearingPhysical -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:ContentBearingPhysical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:Physical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Device -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Device">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Image -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Image">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:VisualContentBearingObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:PhysicalQuantity -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:PhysicalQuantity">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Quantity -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Quantity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:Abstract"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:VisualContentBearingObject -->
+
+    <owl:Class rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:VisualContentBearingObject">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:ContentBearingPhysical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#CoordinateSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#CoordinateSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:Abstract"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#CORA:Robot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#CORA:Robot">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Agent"/>
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#hasAttached"/>
+                <owl:someValuesFrom rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Bone_Drill"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#CORA:RobotPart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#CORA:RobotPart">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:EndEffector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:EndEffector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#CORA:RobotPart"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:Exterioceptive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:Exterioceptive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:GripperEffector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:GripperEffector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:EndEffector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:MultiPurposeEffector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:MultiPurposeEffector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:EndEffector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:MultifingeredHandEffector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:MultifingeredHandEffector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:EndEffector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:Sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:Sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:MeasuringDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:VacuumEffector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:VacuumEffector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:EndEffector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:WristDevice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#RPARTS:WristDevice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#CORA:RobotPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:Abstract -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:Abstract">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:Entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:Entity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:MeasuringDevice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:MeasuringDevice">
+        <rdfs:subClassOf rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Device"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#CORA:RobotPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:Object">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:Physical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:Physical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:Physical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulogoncalves/ontologies/2014/2/untitled-ontology-24#SUMO:Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#Baked4 -->
+
+    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#Baked4"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#Dough2 -->
+
+    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#Dough2"/>
+    
+
+
+    <!-- http://ias.cs.tum.edu/kb/knowrob.owl#EggYolk-Food1 -->
+
+    <owl:NamedIndividual rdf:about="http://ias.cs.tum.edu/kb/knowrob.owl#EggYolk-Food1"/>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#AlokaUS -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#AlokaUS">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#US_imager"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#BoneContourSegmentation1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#BoneContourSegmentation1">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CT_BoneContourSegmentation"/>
+        <knowrob:objectActedOn rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#imagesFromCT"/>
+        <knowrob:outputs rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#imagesFromCTBoneSegmented"/>
+        <knowrob:startTime rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1298634608"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTPointCloud_preOP -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTPointCloud_preOP">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PointCloud"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTScan1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTScan1">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTdatasetPerception"/>
+        <owl:sameAs rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtain3DfemurModelFromCT_init"/>
+        <knowrob:deviceUsed rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CT_machine_Euromedic"/>
+        <knowrob:eventOccursAt rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTroom1"/>
+        <knowrob:objectActedOn rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#entireFemur1"/>
+        <knowrob:outputs rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTdataset1"/>
+        <knowrob:startTime rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1298634558"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CT_PointCloudConstruction1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CT_PointCloudConstruction1">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CT_PointCloudConstruction"/>
+        <knowrob:objectActedOn rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTdataset1"/>
+        <knowrob:objectActedOn rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#imagesFromCTBoneSegmented"/>
+        <knowrob:outputs rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTPointCloud_preOP"/>
+        <knowrob:startTime rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1298634628"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CT_machine_Euromedic -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CT_machine_Euromedic">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CT_imager"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTdataset1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTdataset1">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTdataset"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTroom1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTroom1">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTRoom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CrackingAnEgg -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CrackingAnEgg"/>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#DrillingPose -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#DrillingPose">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Pose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#EngRoom1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#EngRoom1">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#EngineerRoom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#ExtractImagesFromCTdataSET1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#ExtractImagesFromCTdataSET1">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#ExtractImagesFromCTdataSET"/>
+        <knowrob:eventOccursAt rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#EngRoom1"/>
+        <knowrob:objectActedOn rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTdataset1"/>
+        <knowrob:outputs rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#imagesFromCT"/>
+        <knowrob:startTime rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1298634588"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FlippingAPancake -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FlippingAPancake"/>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#KUKAlwr1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#KUKAlwr1">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#RobotMotion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes12 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes12">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PartialOrdering-Strict"/>
+        <knowrob:occursAfterInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MixFlourAndMilk"/>
+        <knowrob:occursBeforeInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CrackingAnEgg"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes13 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes13">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PartialOrdering-Strict"/>
+        <knowrob:occursAfterInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MixEggAndDough"/>
+        <knowrob:occursBeforeInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CrackingAnEgg"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes14 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes14">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PartialOrdering-Strict"/>
+        <knowrob:occursAfterInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PourDoughOntoPancakeMaker"/>
+        <knowrob:occursBeforeInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CrackingAnEgg"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes15 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes15">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PartialOrdering-Strict"/>
+        <knowrob:occursAfterInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FlippingAPancake"/>
+        <knowrob:occursBeforeInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CrackingAnEgg"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes23 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes23">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PartialOrdering-Strict"/>
+        <knowrob:occursAfterInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MixEggAndDough"/>
+        <knowrob:occursBeforeInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MixFlourAndMilk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes24 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes24">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PartialOrdering-Strict"/>
+        <knowrob:occursAfterInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PourDoughOntoPancakeMaker"/>
+        <knowrob:occursBeforeInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MixFlourAndMilk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes25 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes25">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PartialOrdering-Strict"/>
+        <knowrob:occursAfterInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FlippingAPancake"/>
+        <knowrob:occursBeforeInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MixFlourAndMilk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes34 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes34">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PartialOrdering-Strict"/>
+        <knowrob:occursAfterInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PourDoughOntoPancakeMaker"/>
+        <knowrob:occursBeforeInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MixEggAndDough"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes35 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes35">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PartialOrdering-Strict"/>
+        <knowrob:occursAfterInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FlippingAPancake"/>
+        <knowrob:occursBeforeInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MixEggAndDough"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes45 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MakingPancakes45">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PartialOrdering-Strict"/>
+        <knowrob:occursAfterInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#FlippingAPancake"/>
+        <knowrob:occursBeforeInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PourDoughOntoPancakeMaker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MixEggAndDough -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MixEggAndDough"/>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MixFlourAndMilk -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#MixFlourAndMilk"/>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PolarisScan1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PolarisScan1">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#POLARISdataPerception"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PolarisSpectra -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PolarisSpectra">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#IR_imager"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PourDoughOntoPancakeMaker -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#PourDoughOntoPancakeMaker"/>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#RotationMatrix3D1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#RotationMatrix3D1">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D"/>
+        <knowrob:m00 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</knowrob:m00>
+        <knowrob:m01 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m01>
+        <knowrob:m02 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m02>
+        <knowrob:m03 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m03>
+        <knowrob:m10 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m10>
+        <knowrob:m11 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</knowrob:m11>
+        <knowrob:m12 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m12>
+        <knowrob:m13 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m13>
+        <knowrob:m20 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m20>
+        <knowrob:m21 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m21>
+        <knowrob:m22 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</knowrob:m22>
+        <knowrob:m23 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.375</knowrob:m23>
+        <knowrob:m30 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m30>
+        <knowrob:m31 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m31>
+        <knowrob:m32 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m32>
+        <knowrob:m33 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</knowrob:m33>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#RotationMatrix3D2 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#RotationMatrix3D2">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#RotationMatrix3D"/>
+        <knowrob:m00 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</knowrob:m00>
+        <knowrob:m01 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m01>
+        <knowrob:m02 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m02>
+        <knowrob:m03 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m03>
+        <knowrob:m10 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m10>
+        <knowrob:m11 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</knowrob:m11>
+        <knowrob:m12 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m12>
+        <knowrob:m13 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m13>
+        <knowrob:m20 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m20>
+        <knowrob:m21 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m21>
+        <knowrob:m22 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</knowrob:m22>
+        <knowrob:m23 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3775</knowrob:m23>
+        <knowrob:m30 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m30>
+        <knowrob:m31 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m31>
+        <knowrob:m32 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</knowrob:m32>
+        <knowrob:m33 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</knowrob:m33>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SemanticMapPerception1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SemanticMapPerception1">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#VisualPerception"/>
+        <knowrob:eventOccursAt rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#RotationMatrix3D1"/>
+        <knowrob:objectActedOn rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#table1"/>
+        <knowrob:startTime rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1286380475"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SemanticMapPerception2 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SemanticMapPerception2">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#VisualPerception"/>
+        <knowrob:eventOccursAt rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#RotationMatrix3D2"/>
+        <knowrob:objectActedOn rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#egg1"/>
+        <knowrob:startTime rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1286380475"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#USPointCloud_intraOP -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#USPointCloud_intraOP">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#OR_PointCloud"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#USScanner -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#USScanner">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#USimagePerception"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#cracking1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#cracking1">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#Cracking"/>
+        <knowrob:objectActedOn rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#egg1"/>
+        <knowrob:startTime rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1298634558"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#egg1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#egg1">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#Egg-Chickens"/>
+        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.05</knowrob:depthOfObject>
+        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.05</knowrob:heightOfObject>
+        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.05</knowrob:widthOfObject>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#entireFemur1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#entireFemur1">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#EntireFemur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#flour1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#flour1">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#WheatFlour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#image_postProc -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#image_postProc"/>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#imagesFromCT -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#imagesFromCT">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Image"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#imagesFromCTBoneSegmented -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#imagesFromCTBoneSegmented">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#SUMO:Image"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#milk1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#milk1">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#CowsMilk-Product"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#mixing1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#mixing1">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#Mixing"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#EggYolk-Food1"/>
+        <knowrob:objectActedOn rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#milk1"/>
+        <knowrob:objectActedOn rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#pancakemix1"/>
+        <knowrob:startTime rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1298634588"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtain3DfemurModelFromCT_12 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtain3DfemurModelFromCT_12">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PartialOrdering-Strict"/>
+        <knowrob:occursAfterInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#CTScan1"/>
+        <knowrob:occursBeforeInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#ExtractImagesFromCTdataSET1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtain3DfemurModelFromCT_23 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtain3DfemurModelFromCT_23"/>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtain3DfemurModelFromCT_init -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#obtain3DfemurModelFromCT_init">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PartialOrdering-Strict"/>
+        <knowrob:occursBeforeInOrdering rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#ExtractImagesFromCTdataSET1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#pancakemaker1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#pancakemaker1">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PancakeMaker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#pancakemix1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#pancakemix1">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PancakeMix"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#plate1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#plate1">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#DinnerPlate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#poseUSProbe -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#poseUSProbe">
+        <rdf:type rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#Pose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#pour1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#pour1">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PuttingSomethingOnto"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#Dough2"/>
+        <knowrob:startTime rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1298634608"/>
+        <knowrob:toLocation rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#pancakemaker1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#put1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#put1">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#PuttingSomethingOnto"/>
+        <knowrob:objectActedOn rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#Baked4"/>
+        <knowrob:startTime rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1298634628"/>
+        <knowrob:toLocation rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#plate1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#table1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#table1">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#KitchenTable"/>
+        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</knowrob:depthOfObject>
+        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.75</knowrob:heightOfObject>
+        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</knowrob:widthOfObject>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1286380475 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1286380475">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1298634548 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1298634548">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1298634558 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1298634558">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1298634588 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1298634588">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1298634608 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1298634608">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1298634628 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1298634628">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#turnon1 -->
+
+    <owl:NamedIndividual rdf:about="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#turnon1">
+        <rdf:type rdf:resource="http://ias.cs.tum.edu/kb/knowrob.owl#TurningOnPoweredDevice"/>
+        <knowrob:objectActedOn rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#pancakemaker1"/>
+        <knowrob:startTime rdf:resource="http://pessoas.ipcb.pt/paulo.goncalves/ontologias/hiprob.owl#timepoint_1298634548"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+
